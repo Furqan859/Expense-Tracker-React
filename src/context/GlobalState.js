@@ -29,7 +29,7 @@ const [state, dispatch] = useReducer(AppReducer, InitialState);
     }
 
             
-return ( <GlobalContext.Provider value={{ transactions: state.transactions, deleteTransaction, addTransaction, editTransaction, clearTransactions }}>
+return ( <GlobalContext.Provider value={{ transactions: state.transactions, deleteTransaction, addTransaction }}>
       {children}
     </GlobalContext.Provider>
   );
